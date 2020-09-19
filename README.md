@@ -17,7 +17,7 @@ y_real = 0.385 * ( x_real + np.random.randint(low = 0.5 ,high = 2.0 ,size = 100)
 接著在每次iteration計算一次目標函數對kernal及bias的微分來得到gradient值。
 之後此次的kernal及bias減去學習率(learning rate)乘以gradient值成為下一次迭代的kernal及bias。
 
-* Python:
+* **Python**:
 ~~~js
 #target: ydata = w * xdata + b
 b = 200
@@ -45,7 +45,7 @@ for i in range(100000):
 [w_history[-1], b_history[-1]]
 ~~~
 
-* TensorFlow:
+* **TensorFlow**:
 ~~~js
 class Linear(tf.keras.Model):
     def __init__(self):
@@ -74,9 +74,9 @@ print(model.variables)
 ~~~
 
 ## Result
-* Python:
+* **Python**:
   * y = 0.3855 x - 1.5187
-* TensorFlow:
+* **TensorFlow**:
   * y = 0.3747 x - 1.2586
 
 
