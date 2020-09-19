@@ -12,7 +12,10 @@ y_real = 0.385 * ( x_real + np.random.randint(low = 0.5 ,high = 2.0 ,size = 100)
 ~~~
 
 ## 原理
-這裡分別使用了單純的python以及利用TensorFlow來進行相同運算
+這裡分別使用了單純的python以及利用TensorFlow來進行相同運算。
+概念均為先假設一個線性的目標函數，其斜率(在DL中稱kernal)及截距(在DL中稱bias)初始值隨意設。
+接著在每次iteration計算一次目標函數對kernal及bias的微分來得到gradient值。
+之後此次的kernal及bias減去學習率(learning rate)乘以gradient值成為下一次迭代的kernal及bias。
 
 * Python:
 ~~~js
