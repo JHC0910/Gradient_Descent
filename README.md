@@ -73,6 +73,11 @@ for i in range(100000):
 print(model.variables)
 ~~~
 
+## Result
+* Python:
+  * y = 0.3855 x - 1.5187
+* TensorFlow:
+  * y = 0.3747 x - 1.2586
 
 
 ## Generalization
