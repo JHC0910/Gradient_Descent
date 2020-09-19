@@ -15,3 +15,8 @@ y_real = 0.385 * ( x_real + np.random.randint(low = 0.5 ,high = 2.0 ,size = 100)
 
 
 
+## Generalization
+雖然是用一維方程式來進行測試，事實上可以
+
+
+
